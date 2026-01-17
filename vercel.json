@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "env": [
+    {
+      "key": "ANTHROPIC_API_KEY",
+      "description": "Your Anthropic API key from https://console.anthropic.com",
+      "required": true
+    },
+    {
+      "key": "STRIPE_SECRET_KEY",
+      "description": "Your Stripe secret key (optional, for payments)",
+      "required": false
+    },
+    {
+      "key": "STRIPE_PUBLISHABLE_KEY",
+      "description": "Your Stripe publishable key (optional, for payments)",
+      "required": false
+    }
+  ]
+}
